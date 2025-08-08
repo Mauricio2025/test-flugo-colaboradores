@@ -59,7 +59,7 @@ Hospedado na [Vercel](https://vercel.com/). Basta conectar o repositório, confi
 
 ## 🔗 Links
 
-- [Demo no Vercel](https://test-flugo-colaboradores-jb2wzjbvk-mauricio2025s-projects.vercel.app/)p)
+- [Demo no Vercel](https://test-flugo-colaboradores-jb2wzjbvk-mauricio2025s-projects.vercel.app/)
 - [Repositório GitHub](https://github.com/Mauricio2025/test-flugo-colaboradores)
 
 ## 📝 Licença
