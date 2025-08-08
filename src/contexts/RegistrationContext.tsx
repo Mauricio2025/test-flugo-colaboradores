@@ -5,6 +5,7 @@ export interface BasicInfo {
   nome: string;
   email: string;
   ativo: boolean;
+  avatarUrl?: string;
 }
 
 export interface RegistrationData {
@@ -25,8 +26,8 @@ const defaultData: RegistrationData = {
 
 const RegistrationContext = createContext<RegistrationContextValue>({
   data: defaultData,
-  setBasicInfo: () => {},
-  setDepartamento: () => {},
+  setBasicInfo: () => { },
+  setDepartamento: () => { },
 });
 
 export const RegistrationProvider = ({ children }: { children: ReactNode }) => {
