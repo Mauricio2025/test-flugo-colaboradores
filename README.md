@@ -1,63 +1,67 @@
-# React + TypeScript + Vite
+# Flugo - Cadastro de Colaboradores
 
+Este projeto foi desenvolvido como parte do desafio técnico da empresa **Flugo**.
 
-## Expanding the ESLint configuration
+## ✨ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Material UI](https://mui.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Yup](https://github.com/jquense/yup)
+- [Firebase](https://firebase.google.com/)
+- [Vite](https://vitejs.dev/)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧩 Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Cadastro de novos colaboradores em 2 etapas (formulário multi-step):
+  - Informações básicas (nome, e-mail e status ativo)
+  - Informações profissionais (departamento)
+- Exibição da lista de colaboradores cadastrados com:
+  - Ordenação por colunas
+  - Avatar, status e departamento
+- Design moderno e responsivo com Material UI
+- Notificações de sucesso ao cadastrar um colaborador
+- Barra de progresso visual nas etapas de cadastro
+- Interface clara com navegação por stepper lateral
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Como executar
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/flugo-colaboradores.git
+cd flugo-colaboradores
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Instale as dependências:
+```bash
+npm install
 ```
+
+3. Crie um arquivo `.env` com as chaves do seu projeto Firebase:
+```env
+VITE_FIREBASE_API_KEY=...
+VITE_FIREBASE_AUTH_DOMAIN=...
+VITE_FIREBASE_PROJECT_ID=...
+VITE_FIREBASE_STORAGE_BUCKET=...
+VITE_FIREBASE_MESSAGING_SENDER_ID=...
+VITE_FIREBASE_APP_ID=...
+```
+
+4. Rode o projeto:
+```bash
+npm run dev
+```
+
+## 📦 Deploy
+
+Hospedado na [Vercel](https://vercel.com/). Basta conectar o repositório, configurar as variáveis de ambiente e o comando de build (`npm run build`) e de start (`npm run preview`).
+
+## 🔗 Links
+
+- [Demo no Vercel][(https://seu-projeto.vercel.ap](https://test-flugo-colaboradores-jb2wzjbvk-mauricio2025s-projects.vercel.app/)p)
+- [Repositório GitHub](https://github.com/Mauricio2025/test-flugo-colaboradores)
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT.
